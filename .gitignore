@@ -1,0 +1,11 @@
+# Ignore any swap files
+*.swp
+*.swo
+*.pyc
+
+# Ignore the build directory
+build/
+
+# Ignore virtualenv directory
+venv/
+
