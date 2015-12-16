@@ -4,7 +4,7 @@
 *.pyc
 
 # Ignore the build directory
-build/
+docs/build/
 
 # Ignore virtualenv directory
 venv/
