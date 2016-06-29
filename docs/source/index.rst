@@ -6,12 +6,13 @@
 Welcome to rt-timesync's documentation!
 =======================================
 
-Contents:
+Table of Contents
+-----------------
 
 .. toctree::
    :maxdepth: 2
 
-
+   custom-fields-example
 
 Indices and tables
 ==================
