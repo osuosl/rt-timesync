@@ -9,3 +9,18 @@ docs/build/
 # Ignore virtualenv directory
 venv/
 
+# RT extension files
+RT-Extension-TimeSync/blib*
+RT-Extension-TimeSync/Makefile
+RT-Extension-TimeSync/Makefile.old
+RT-Extension-TimeSync/pm_to_blib*
+RT-Extension-TimeSync/*.tar.gz
+RT-Extension-TimeSync/.lwpcookies
+RT-Extension-TimeSync/cover_db
+RT-Extension-TimeSync/pod2htm*.tmp
+RT-Extension-TimeSync/RT-Extension-TimeSync*
+RT-Extension-TimeSync/*.bak
+RT-Extension-TimeSync/*.swp
+RT-Extension-TimeSync/MYMETA.*
+RT-Extension-TimeSync/t/tmp
+RT-Extension-TimeSync/xt/tmp
