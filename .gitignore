@@ -9,6 +9,8 @@ docs/build/
 # Ignore virtualenv directory
 venv/
 
+# Postgres data
+
 # RT extension files
 RT-Extension-TimeSync/blib*
 RT-Extension-TimeSync/Makefile
@@ -24,3 +26,6 @@ RT-Extension-TimeSync/*.swp
 RT-Extension-TimeSync/MYMETA.*
 RT-Extension-TimeSync/t/tmp
 RT-Extension-TimeSync/xt/tmp
+RT-Extension-TimeSync/META.yml
+RT-Extension-TimeSync/README
+RT-Extension-TimeSync/inc/

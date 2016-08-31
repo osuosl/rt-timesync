@@ -1,0 +1,30 @@
+version: '2'
+services:
+    pgsql:
+        image: postgres
+        ports:
+            - "5432:5432"
+        volumes:
+            - ./data:/data
+        environment:
+            - POSTGRES_USER=rt_user
+            - POSTGRES_PASSWORD=rt_pass
+            - POSTGRES_DB=rt4
+            - PGDATA=/data
+    rt:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - ./RT-Extension-TimeSync:/opt/RT-Extension-TimeSync
+        working_dir: /opt/RT-Extension-TimeSync
+        ports:
+            - "80:80"
+        links:
+            - pgsql:db
+        environment:
+            - DATABASE_HOST=pgsql
+            - DATABASE_PORT=5432
+            - DATABASE_USER=rt_user
+            - DATABASE_PASS=rt_pass
+            - DATABASE_NAME=rt4
